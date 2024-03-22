@@ -38,7 +38,7 @@ export default function App() {
 					let newScore = team1 + 1;
 					setTeam1(newScore);
 					checkPoints(newScore, "Time 1");
-				}} onPress2={() => {
+				}} onPressMinus={() => {
 					if (team1 != 0) {
 						let newScore = team1 - 1;
 						setTeam1(newScore);
@@ -49,7 +49,7 @@ export default function App() {
 					let newScore = team2 + 1;
 					setTeam2(newScore);
 					checkPoints(newScore, "Time 2");
-				}} image2={Minus} onPress2={() => {
+				}} image2={Minus} onPressMinus={() => {
 					if (team2 != 0) {
 						let newScore = team2 - 1;
 						setTeam2(newScore);

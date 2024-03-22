@@ -1,13 +1,13 @@
 import { Image, StyleSheet, Text, TouchableOpacity, View } from "react-native";
 
-export default function Team({ points, onPress, onPress2, image, image2 }) {
+export default function Team({ points, onPress, onPressMinus, image, image2 }) {
     return (
         <View>
             <Text style={styles.text}>{points}</Text>
             <TouchableOpacity style={styles.button} onPress={onPress}>
                 <Image resizeMode="cover" source={image} style={styles.cards} />
             </TouchableOpacity>
-            <TouchableOpacity style={styles.minusButton} onPress={onPress2}>
+            <TouchableOpacity style={styles.minusButton} onPress={onPressMinus}>
                 <Image resizeMode="contain" source={image2} style={styles.minusImage} />
             </TouchableOpacity>
         </View>
